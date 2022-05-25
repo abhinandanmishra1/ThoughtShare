@@ -9,6 +9,7 @@ const postSchema = mongoose.Schema({
 		type: Number,
 		default: 0,
 	},
+	tags: [""], // post tags
 	createdAt: {
 		type: Date,
 		default: new Date(),

@@ -4,7 +4,7 @@ import useStyles from "./styles";
 import { CircularProgress, Grid } from "@material-ui/core";
 import { useSelector } from "react-redux";
 // useSelector is a hook that allows us to access the state of the store
-const Posts = () => {
+const Posts = ({ setCurrentId }) => {
 	const posts = useSelector((state) => state.posts);
 	const classes = useStyles();
 	console.log(posts);
@@ -18,7 +18,7 @@ const Posts = () => {
 			spacing={3}>
 			{posts.map((post) => (
 				<Grid item key={post._id} xs={12} sm={6}>
-					<Post post={post} />
+					<Post post={post} setCurrentId={setCurrentId} />
 				</Grid>
 			))}
 		</Grid>
