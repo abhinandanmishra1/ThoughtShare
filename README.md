@@ -109,3 +109,20 @@
   - Now just write `onClick={()=>dispatch(likePost(post._id))}`
 
 - That's all about it.
+
+#### How to clone and run this project?
+
+- Run `git clone https://github.com/abhinandanmishra1/thoughtShare`
+- Run `cd client` or open cmd in client folder and run `npm i` this will install all dependencies.
+- Open server folder in cmd and run `npm i`
+- Now only one thing is needed to start the project that is `.env` file.
+- Create a project on [MongoDb](https://cloud.mongodb.com/) and Select `Connect with your application` and copy CONNECTION_URL.
+- Now create .env file in the given format
+
+```json
+CONNECTION_URL=mongodb+srv://<userName>:<password>@cluster0.wxq84.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+PORT=5000
+```
+
+- Now start your backend server by running `npm start` in server directory.
+- Start frontend by running `npm start` in client directory.

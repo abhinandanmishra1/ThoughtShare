@@ -14,6 +14,7 @@ const postSchema = mongoose.Schema({
 		type: Date,
 		default: new Date(),
 	},
+	selectedFile: String, // post image
 });
 
 // This tells what data is used in each post
