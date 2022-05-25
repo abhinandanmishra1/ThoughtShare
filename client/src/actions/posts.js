@@ -35,3 +35,12 @@ export const updatePost = (id, post) => async (dispatch) => {
 		console.log(err);
 	}
 };
+
+export const deletePost = (id) => async (dispatch) => {
+	try {
+		await api.deletePost(id);
+		dispatch({ type: "DELETE_POST", payload: id });
+	} catch (err) {
+		console.log(err);
+	}
+};

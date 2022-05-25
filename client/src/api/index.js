@@ -10,3 +10,5 @@ export const updatePost = (id, updatedPost) => {
 	console.log("ttt ", id, updatedPost);
 	return axios.patch(`${url}/${id}`, updatedPost);
 };
+
+export const deletePost = (id) => axios.delete(`${url}/${id}`);
