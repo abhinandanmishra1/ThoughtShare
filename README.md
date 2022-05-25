@@ -20,7 +20,8 @@
 - Redux Knowledge
   - I will write here about redux
   - Folders used for redux are `actions` and `reducers`.
-- **How things are working?**
+
+### How things are working?
 
 - For creating any functionality what I am doing is ->
 
