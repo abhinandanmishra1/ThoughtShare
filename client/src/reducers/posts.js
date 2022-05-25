@@ -17,6 +17,7 @@ const reducer = (posts = [], action) => {
 		// action.payload is the id of the post which is deleted
 		// that's why we're filtering the posts array and returning the new one
 		case "UPDATE_POST":
+		case "LIKE_POST":
 			return posts.map((post) =>
 				post._id === action.payload._id ? action.payload : post
 			);
